@@ -108,16 +108,16 @@
 
       <!-- SOCIAL ICONS AT BOTTOM -->
       <div class="social-footer">
-        <a href="https://facebook.com" target="_blank" class="icon bg-primary">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://linkedin.com" target="_blank" class="icon bg-info">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank" class="icon bg-danger">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
+  <a href="https://facebook.com" target="_blank" class="social-box">
+    <i class="bi bi-facebook"></i>
+  </a>
+  <a href="https://linkedin.com" target="_blank" class="social-box">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" class="social-box">
+    <i class="bi bi-instagram"></i>
+  </a>
+</div>
     </div>
   </div>
 </template>
@@ -148,7 +148,6 @@ function submitForm() {
           from_email: form.value.email,
           message: form.value.message,
           time: new Date().toLocaleString(), 
-
         },
         "Id2S0lYcOvqF2zOZD"    
       )
@@ -162,7 +161,6 @@ function submitForm() {
   }
 }
 </script>
-
 
 <style scoped>
 .contact-page {
@@ -297,20 +295,23 @@ function submitForm() {
   justify-content: center;
   gap: 20px;
 }
-.icon {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+.social-box {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  background: #222;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 18px;
-  transition: all 0.4s ease;
-  cursor: pointer;
+  font-size: 22px;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
-.icon:hover {
-  transform: scale(1.2) rotate(10deg);
+.social-box:hover {
+  background: #01a181;
+  color: #000;
+  transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
 }
 </style>
